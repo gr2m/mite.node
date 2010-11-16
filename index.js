@@ -9,133 +9,71 @@
 
 
 require.paths.unshift('./vendor');
-MiteClient = require(__dirname + '/lib/mite_client');
 
-var Mite      = new MiteClient({
+var creds = {
   account:  'yolk',
   api_key:  '76315504aa8df50'
-});
+};
 
-User.all()
+function dump(data) {
+  console.log(data);
+}
 
-// Mite.users.active(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.users.archived(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.users.find(1, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// // throws an error: not allowed over api (same for new & delete)
-// Mite.users.update(1, {name: 'funky yo!'}, function(data, response) {
-//   onsole.log(JSON.parse(data))
-// })
+var UserResource = require(__dirname + '/lib/resources/user'),
+    User         = new UserResource(creds);
+// User.all(dump);
+// User.archived(dump);
+// User.find(1, dump);
+// User.time_entries(1, dump)
 
-// Mite.customers.active(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.archived(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.new({name: 'funky uno!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.find(1, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.update(1, {name: 'funky yo!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.update(1, {name: 'funky zwo!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.delete(1, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.projects(12, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.customers.time_entries(1, function(data) {
-//   console.log(JSON.parse(data))
-// })
+var CustomerResource = require(__dirname + '/lib/resources/customer'),
+    Customer         = new CustomerResource(creds);
+// Customer.all(dump);
+// Customer.archived(dump);
+// Customer.new({name: 'funky uno!'}, dump);
+// Customer.find(1, dump);
+// Customer.update(1, {name: 'funky zwuno!'}, dump);
+// Customer.delete(16, dump);
+// Customer.time_entries(1, dump)
+// Customer.projects(1, dump)
 
-// Mite.projects.active(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.projects.archived(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.projects.new({name: 'funky uno!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.projects.find(18, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.projects.update(18, {name: 'funky zwo!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.projects.delete(18, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
+var ProjectResource = require(__dirname + '/lib/resources/project'),
+    Project         = new ProjectResource(creds);
+// Project.all(dump);
+// Project.archived(dump);
+// Project.new({name: 'funky uno!'}, dump);
+// Project.find(1, dump);
+// Project.update(1, {name: 'funky zwuno!'}, dump);
+// Project.delete(20, dump);
+// Project.time_entries(1, dump)
 
-// Mite.services.active(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.services.archived(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.services.new({name: 'funky uno!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.services.find(23, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.services.update(23, {name: 'funky zwo!'}, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.services.delete(23, function(data, response) {
-//   console.log(JSON.parse(data))
-// })
+var ServiceResource = require(__dirname + '/lib/resources/service'),
+    Service         = new ServiceResource(creds);
+// Service.all(dump);
+// Service.archived(dump);
+// Service.new({name: 'funky uno!'}, dump);
+// Service.find(1, dump);
+// Service.update(1, {name: 'funky zwuno!'}, dump);
+// Service.delete(24, dump);
+// Service.time_entries(1, dump)
 
-// Mite.time_entries.all(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.time_entries.all({service_id: 1},function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.time_entries.new(function(data) {
-//   console.log(JSON.parse(data))
-// })
-//   Mite.time_entries.new({minutes: 185}, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.time_entries.find(3028, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.time_entries.update(3028, {minutes: 123},function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.time_entries.delete(3028, function(data) {
-//   console.log(JSON.parse(data))
-// })
+var TimeEntryResource = require(__dirname + '/lib/resources/time_entry'),
+    TimeEntry         = new TimeEntryResource(creds);
+// TimeEntry.all(dump);
+// TimeEntry.archived(dump);
+// TimeEntry.new({name: 'funky uno!'}, dump);
+// TimeEntry.find(3024, dump);
+// TimeEntry.update(3024, {note: 'funky zwuno!'}, dump);
+// TimeEntry.delete(3024, dump);
 
-// Mite.tracker.find(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.tracker.start(3063, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.tracker.stop(3063, function(data) {
-//   console.log(JSON.parse(data))
-// })
+var TrackerResource = require(__dirname + '/lib/resources/tracker'),
+    Tracker         = new TrackerResource(creds);
+// Tracker.find(dump);
+// Tracker.start(3064, dump);
+// Tracker.stop(3064,dump);
 
-// Mite.bookmarks.all(function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.bookmarks.find(6, function(data) {
-//   console.log(JSON.parse(data))
-// })
-// Mite.bookmarks.time_entries(6, function(data) {
-//   console.log(JSON.parse(data))
-// })
+var BookmarkResource = require(__dirname + '/lib/resources/bookmark'),
+    Bookmark         = new BookmarkResource(creds);
+// Bookmark.all(dump);
+// Bookmark.find(6, dump);
+// Bookmark.time_entries(6, dump);
