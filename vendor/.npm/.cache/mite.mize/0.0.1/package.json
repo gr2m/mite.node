@@ -1,1 +1,0 @@
-{"name":"mite.mize","description":"embed your favorite timetracking toll mite into your favorite web app.","version":"0.0.1","author":{"name":"Gregor Martynus","email":"gregor@yo.lk"},"directories":{"lib":"lib"},"main":"index","dependencies":{},"_id":"mite.mize@0.0.1","engines":{"node":"*"},"_nodeSupported":true,"_npmVersion":"0.2.5-1","_nodeVersion":"v0.2.4"}

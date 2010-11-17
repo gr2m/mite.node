@@ -2,4 +2,11 @@
 , "description" : "mite.node is the official node library for interacting with the RESTful mite.api"
 , "version"     : "0.0.1"
 , "author"      : "Gregor Martynus <gregor@yo.lk>"
+, "directories" : { "lib" : "lib" }
+, "repository"  : { "type"  : "git"
+                  , "url"   : "http://github.com/pfleidi/node-wwwdude.git"}
+, "bugs"        : { "web"   : "http://github.com/pfleidi/node-wwwdude/issues"}
+, "licenses"    : [{ "type" : "MIT"
+                   , "url"  : "http://github.com/pfleidi/node-wwwdude/raw/master/LICENSE"}]
+, "main"        : "index"
 }
