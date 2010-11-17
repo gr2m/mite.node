@@ -1,18 +1,29 @@
 var creds = { account:    'yolk'
             , api_key:    '76315504aa8df50'
             , user_agent: 'mite.node example/v0.1'},
-    MiteResources = require('../lib/resources'),
-    Mite = new MiteResources(creds);
+    MiteClient = require('../lib/client'),
+    Mite = new MiteClient(creds);
 
 function dump(data) {
   console.log(data);
 }
 
 // User
-Mite.User.all(dump);
-Mite.User.archived(dump);
-Mite.User.find(1, dump);
-Mite.User.time_entries(1, dump);
+// Mite.User.all(dump);
+// Mite.User.archived(dump);
+// Mite.User.find(100, {
+//   error: function(data) {
+//     console.log('something really went wrong');
+//   },
+//   404: function(data) {
+//     console.log('oh now! Where is User #100?');
+//   },
+//   success: function(data) {
+//     console.log('This is User #100:');
+//     dump(data);
+//   }
+// });
+// Mite.User.time_entries(1, dump);
 // 
 // // Customer
 // Mite.Customer.all(dump);
