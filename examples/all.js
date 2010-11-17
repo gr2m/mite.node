@@ -12,11 +12,9 @@ function dump(data) {
 // Mite.User.all(dump);
 // Mite.User.archived(dump);
 // Mite.User.find(100, {
-//   error: function(data) {
+//   error: function(data, resp) {
 //     console.log('something really went wrong');
-//   },
-//   404: function(data) {
-//     console.log('oh now! Where is User #100?');
+//     console.log('ERROR: ' + resp.statusCode)
 //   },
 //   success: function(data) {
 //     console.log('This is User #100:');
