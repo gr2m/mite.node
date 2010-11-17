@@ -30,7 +30,7 @@ function _testError(test, verb, payload) {
       test.ok(resp, 'Response must be provided');
       test.strictEqual(req.method, upCase);
       test.strictEqual(req.url, '/foo');
-      test.strictEqual(req.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(req.headers['user-agent'], 'mite.node');
       if (payload) {
         test.strictEqual(req.payload, 'TEST123');
       }

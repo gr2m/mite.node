@@ -27,7 +27,7 @@ function _testStatus(test, verb, statusCode) {
       test.ok(resp, 'Response must be provided');
       test.strictEqual(req.method, upCase);
       test.strictEqual(req.url, '/foo');
-      test.strictEqual(req.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(req.headers['user-agent'], 'mite.node');
     })
   .addListener('error', function (data, resp) {
       logger.info('caught error');
@@ -38,7 +38,7 @@ function _testStatus(test, verb, statusCode) {
       test.ok(resp, 'Response must be provided');
       test.strictEqual(req.method, upCase);
       test.strictEqual(req.url, '/foo');
-      test.strictEqual(req.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(req.headers['user-agent'], 'mite.node');
       test.done();
     }).send();
 

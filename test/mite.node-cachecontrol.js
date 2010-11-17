@@ -36,7 +36,7 @@ function _notModified(test, verb) {
       test.ok(resp, 'Response must be provided')
       test.strictEqual(response.method, upCase);
       test.strictEqual(response.url, '/foo');
-      test.strictEqual(response.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(response.headers['user-agent'], 'mite.node');
       test.done();
     }).send();
 

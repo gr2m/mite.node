@@ -30,7 +30,7 @@ function _redirect(test, verb) {
       test.strictEqual(resp.statusCode, 301);
       test.strictEqual(response.method, upCase);
       test.strictEqual(response.url, '/');
-      test.strictEqual(response.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(response.headers['user-agent'], 'mite.node');
       test.strictEqual(response.msg, 'Redirecting');
     })
   .on('200', function (data, resp) {
@@ -48,7 +48,7 @@ function _redirect(test, verb) {
       test.strictEqual(resp.statusCode, 200);
       test.strictEqual(response.method, upCase);
       test.strictEqual(response.url, '/redirected');
-      test.strictEqual(response.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(response.headers['user-agent'], 'mite.node');
       test.strictEqual(response.msg, 'Been there, done that!');
       test.done();
     }).send();
@@ -98,7 +98,7 @@ function _redirectFail(test, verb) {
       test.strictEqual(resp.statusCode, 301);
       test.strictEqual(response.method, upCase);
       test.strictEqual(response.url, '/');
-      test.strictEqual(response.headers['user-agent'], 'node-wwwdude');
+      test.strictEqual(response.headers['user-agent'], 'mite.node');
       test.strictEqual(response.msg, 'Redirecting');
     })
   .on('200', function (data, resp) {
