@@ -5,4 +5,4 @@
  * MIT Licensed
  */
 
-module.exports = require('lib/resources');
+module.exports = require('./lib/client');
