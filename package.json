@@ -1,8 +1,5 @@
-{ "name" : "mite.mize"
-, "description" : "embed your favorite timetracking toll mite into your favorite web app."
-, "version" : "0.0.1"
-, "author" : "Gregor Martynus <gregor@yo.lk>"
-, "directories" : { "lib" : "lib" }
-, "main" : "index"
-, "dependencies": { 'wwwdude': ''}
+{ "name"        : "mite.node"
+, "description" : "mite.node is the official node library for interacting with the RESTful mite.api"
+, "version"     : "0.0.1"
+, "author"      : "Gregor Martynus <gregor@yo.lk>"
 }

@@ -41,8 +41,8 @@ function dump(data) {
 // Mite.Project.archived(dump);
 // Mite.Project.create({name: 'funky test'}, dump);
 // Mite.Project.find(24, dump);
-// Mite.Project.update(24, {name: 'funky fresh!'}, dump);
-// Mite.Project.delete(20, dump);
+// Mite.Project.update(24, {name: 'funky fresh!!!!'}, dump);
+// Mite.Project.delete(25, dump);
 // Mite.Project.time_entries(1, dump)
 // 
 // // Service
