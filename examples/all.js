@@ -1,6 +1,8 @@
 var creds = { account:    'yolk'
             , api_key:    '76315504aa8df50'
-            , user_agent: 'mite.node example/v0.1'},
+            , user_agent: 'mite.node example/v0.1'
+            , domain: 'mite.local'
+            },
     MiteClient = require('../lib/client'),
     Mite = new MiteClient(creds);
 
@@ -9,7 +11,7 @@ function dump(data) {
 }
 
 // User
-// Mite.User.all(dump);
+Mite.User.all(dump);
 // Mite.User.archived(dump);
 // Mite.User.find(100, {
 //   error: function(data, resp) {
