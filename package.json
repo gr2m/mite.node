@@ -4,9 +4,9 @@
 , "author"      : "Gregor Martynus <gregor@yo.lk>"
 , "directories" : { "lib" : "lib" }
 , "repository"  : { "type"  : "git"
-                  , "url"   : "http://github.com/pfleidi/node-wwwdude.git"}
-, "bugs"        : { "web"   : "http://github.com/pfleidi/node-wwwdude/issues"}
+                  , "url"   : "http://github.com/gr2m/mite.node.git"}
+, "bugs"        : { "web"   : "http://github.com/gr2m/mite.node/issues"}
 , "licenses"    : [{ "type" : "MIT"
-                   , "url"  : "http://github.com/pfleidi/node-wwwdude/raw/master/LICENSE"}]
+                   , "url"  : "http://github.com/gr2m/mite.node/raw/master/LICENSE"}]
 , "main"        : "index"
 }

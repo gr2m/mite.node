@@ -1,10 +1,10 @@
 var Helper = require('./test_helper'),
     Sys = require('sys'),
-    HttpClient = require('../lib/wwwdude'),
+    HttpClient = require('../lib/client'),
     Log4js = require('log4js');
 
 Log4js.addAppender(Log4js.consoleAppender());
-var logger = Log4js.getLogger('wwwdude-simple');
+var logger = Log4js.getLogger('mite.node-simple');
 logger.setLevel('INFO');
 
 client = HttpClient.createClient({
