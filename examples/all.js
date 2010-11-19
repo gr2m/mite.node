@@ -7,11 +7,11 @@ var creds = { account:    'yolk'
     Mite = new MiteClient(creds);
 
 function dump(data) {
-  console.log(data);
+  console.log(JSON.parse(data));
 }
 
 // User
-Mite.User.all(dump);
+// Mite.User.all({email:'lk'},dump);
 // Mite.User.archived(dump);
 // Mite.User.find(100, {
 //   error: function(data, resp) {
