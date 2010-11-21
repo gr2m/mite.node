@@ -1,6 +1,6 @@
 { "name"        : "mite.node"
 , "description" : "mite.node is the official node library for interacting with the RESTful mite.api"
-, "version"     : "0.0.3"
+, "version"     : "0.0.4"
 , "author"      : "Gregor Martynus <gregor@yo.lk>"
 , "directories" : { "lib" : "lib" }
 , "repository"  : { "type"  : "git"
