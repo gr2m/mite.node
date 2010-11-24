@@ -3,7 +3,7 @@ var creds = { account:    'yolk'
             , user_agent: 'mite.node example/v0.1'
             , domain: 'mite.local'
             },
-    MiteClient = require('../lib/client'),
+    MiteClient = require('../lib/mite.node'),
     Mite = new MiteClient(creds);
 
 function dump(data) {
@@ -11,7 +11,7 @@ function dump(data) {
 }
 
 // User
-// Mite.User.all({email:'lk'},dump);
+Mite.User.all({email:'lk'},dump);
 // Mite.User.archived(dump);
 // Mite.User.find(100, {
 //   error: function(data, resp) {

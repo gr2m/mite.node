@@ -1,7 +1,7 @@
 mite.node
 ============
 
-mite.node is the official node library for interacting with the RESTful mite.api
+mite.node is a library for interacting with the RESTful mite.api
 
 License
 -------
