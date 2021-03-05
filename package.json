@@ -1,12 +1,20 @@
-{ "name"        : "mite.node"
-, "description" : "mite.node is a library for interacting with the RESTful mite.api"
-, "version"     : "0.0.6"
-, "author"      : "Gregor Martynus <gregor@yo.lk>"
-, "directories" : { "lib" : "lib" }
-, "repository"  : { "type"  : "git"
-                  , "url"   : "http://github.com/gr2m/mite.node.git"}
-, "bugs"        : { "web"   : "http://github.com/gr2m/mite.node/issues"}
-, "licenses"    : [{ "type" : "MIT"
-                   , "url"  : "http://github.com/gr2m/mite.node/raw/master/LICENSE"}]
-, "main"        : "index"
+{
+  "name": "mite.node",
+  "description": "mite.node is a library for interacting with the RESTful mite.api",
+  "version": "0.0.6",
+  "author": "Gregor Martynus <gregor@yo.lk>",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": "github:gr2m/mite.node",
+  "bugs": {
+    "web": "http://github.com/gr2m/mite.node/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/gr2m/mite.node/raw/master/LICENSE"
+    }
+  ],
+  "main": "index"
 }
